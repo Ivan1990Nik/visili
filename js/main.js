@@ -184,7 +184,7 @@ var words = [
   answerArray[i] = "_";
   }
   var remainingLetters = word.length;
-  var attempts = 3;
+  var attempts = 15;
   // Игровой цикл
   while (remainingLetters > 0 && attempts > 0) {
   // Показываем состояние игры
