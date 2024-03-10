@@ -1,0 +1,43 @@
+/* .I {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+}
+
+.I img{
+/* width: 100%; */
+}
+.r {
+/*   border: 2px solid red;
+
+  width: 15vw;
+  height: 15vw;
+  font-size: 20px;
+  border-radius: 50%;
+
+  background-color: aqua;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  overflow: hidden; */
+}
+
+.t {
+  content: "";
+  transform: translate(-100% -100%);
+  position: relative;
+  border: 2px solid red;
+
+  width: 18vw;
+  height: 15vw;
+  font-size: 100%;
+  border-radius: 50%;
+
+  background-color: aqua;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  overflow: hidden;
+}
+ */
