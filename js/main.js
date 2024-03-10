@@ -184,7 +184,7 @@ var words = [
   answerArray[i] = "_";
   }
   var remainingLetters = word.length;
-  var attempts = 15;
+  var attempts = 3;
   // Игровой цикл
   while (remainingLetters > 0 && attempts > 0) {
   // Показываем состояние игры
@@ -192,6 +192,7 @@ var words = [
   // Запрашиваем вариант ответа
   var guess = prompt("Угадайте букву, или нажмите Отмена для выхода из игры.");
   if (guess === null) {
+    alert("досвидание!!!")
   // Выходим из игрового цикла
   break;
   } else if (guess.length !== 1) {
@@ -202,15 +203,20 @@ var words = [
   for (var j = 0; j < word.length; j++) {
   if (word[j] === guess.toLowerCase() && answerArray[j] === "_") {
   answerArray[j] = guess;
-  remainingLetters--; 
+  remainingLetters--;
   }
-  }
-  if (guess.toLowerCase()) {
-    attempts--;
-  }
-  }
+}
+ if (guess.toLowerCase()) {
+  attempts--;
+} 
+  
+}
+}
   // Конец игрового цикла
-  }
   // // Отображаем ответ и поздравляем игрока
+  if (remainingLetters === 0) {
   alert(answerArray.join("  "));
-  alert("Отлично! поздравляем" );
+  alert("Отлично молодец!" );
+  } else if (attempts === 0) {
+    alert("вы повешаный!!!")
+  }
